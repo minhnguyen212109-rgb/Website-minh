@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bảo Minh | Trang cá nhân</title>
+<meta name="description" content="Website cá nhân của Bảo Minh - sở thích, học tập và nhiếp ảnh.">
+<title>Bảo Minh | Website cá nhân</title>
 
 <style>
 * {
@@ -17,7 +18,7 @@
 body {
     font-family: Arial, sans-serif;
     background: #0b0b0b;
-    color: white;
+    color: #fff;
     line-height: 1.7;
 }
 
@@ -25,30 +26,34 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(10,10,10,0.95);
-    padding: 18px 7%;
+    background: rgba(10,10,10,0.96);
+    border-bottom: 1px solid #292929;
+    padding: 16px 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #292929;
+    gap: 15px;
 }
 
 .logo {
     font-size: 23px;
     font-weight: bold;
     letter-spacing: 2px;
+    white-space: nowrap;
 }
 
 nav {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
-    color: white;
+    color: #ddd;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -56,7 +61,8 @@ nav a:hover {
 }
 
 section {
-    padding: 85px 8%;
+    padding: 75px 8%;
+    scroll-margin-top: 85px;
 }
 
 .hero {
@@ -64,12 +70,13 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(120deg, #151515, #080808);
+    background: linear-gradient(120deg, #191919, #080808);
 }
 
 .hero h1 {
     font-size: clamp(38px, 7vw, 65px);
-    margin-bottom: 15px;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .hero h1 span {
@@ -78,8 +85,8 @@ section {
 
 .hero p {
     color: #bbb;
-    max-width: 600px;
-    font-size: 18px;
+    max-width: 650px;
+    font-size: 17px;
 }
 
 .button {
@@ -89,8 +96,13 @@ section {
     background: #e53935;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     width: fit-content;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #b71c1c;
 }
 
 h2 {
@@ -119,6 +131,7 @@ h2 {
 
 .card:hover {
     transform: translateY(-5px);
+    border-color: #555;
 }
 
 .card img {
@@ -129,17 +142,46 @@ h2 {
 }
 
 .card-content {
-    padding: 18px;
+    padding: 20px;
 }
 
-.card p {
+.card-content h3 {
+    font-size: 19px;
+}
+
+.card-content p {
     color: #aaa;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.subject-card {
+    padding: 25px;
+    background: #171717;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff4545;
+}
+
+.subject-card .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subject-card p {
+    color: #aaa;
+    font-size: 14px;
     margin-top: 8px;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 18px;
 }
 
@@ -148,6 +190,11 @@ h2 {
     height: 260px;
     object-fit: cover;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
 }
 
 .video-box {
@@ -156,8 +203,9 @@ h2 {
 
 video {
     width: 100%;
+    display: block;
     border-radius: 12px;
-    margin-top: 15px;
+    margin-top: 20px;
     background: #171717;
 }
 
@@ -171,32 +219,40 @@ video {
 
 .canon-box p {
     color: #bbb;
+    margin-top: 10px;
 }
 
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 30px 15px;
     color: #777;
     border-top: 1px solid #292929;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     header {
         flex-direction: column;
-        gap: 15px;
+        padding: 15px 4%;
     }
 
     nav {
-        justify-content: center;
-        gap: 13px;
+        gap: 12px;
     }
 
     nav a {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     section {
-        padding: 65px 6%;
+        padding: 60px 6%;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    h2 {
+        font-size: 27px;
     }
 }
 </style>
@@ -211,32 +267,41 @@ footer {
         <a href="#home">Trang chủ</a>
         <a href="#about">Giới thiệu</a>
         <a href="#hobbies">Sở thích</a>
+        <a href="#subjects">Môn học</a>
         <a href="#gallery">Hình ảnh</a>
         <a href="#video">Video</a>
         <a href="#canon">Canon</a>
     </nav>
 </header>
 
+<!-- TRANG CHỦ -->
 <section class="hero" id="home">
     <h1>Xin chào, mình là <span>Bảo Minh</span></h1>
+
     <p>
         Chào mừng bạn đến với website cá nhân của mình.
-        Đây là nơi mình chia sẻ về bản thân, sở thích,
-        nhiếp ảnh và những khoảnh khắc trong cuộc sống.
+        Đây là nơi mình chia sẻ về bản thân, học tập,
+        sở thích, nhiếp ảnh và những khoảnh khắc đáng nhớ.
     </p>
+
     <a href="#about" class="button">Khám phá thêm</a>
 </section>
 
+<!-- GIỚI THIỆU -->
 <section id="about">
-    <h2>Giới thiệu</h2>
+    <h2>Giới thiệu bản thân</h2>
+
     <p class="description">
-        Mình là Nguyễn Xuân Bảo Minh. Mình yêu thích khám phá,
-        trải nghiệm những điều mới và lưu giữ những khoảnh khắc
-        đẹp trong cuộc sống. Website này là góc nhỏ để mình
-        chia sẻ những sở thích và đam mê của bản thân.
+        Mình là Nguyễn Xuân Bảo Minh.
+        Mình yêu thích khám phá, trải nghiệm những điều mới
+        và lưu giữ những khoảnh khắc đẹp trong cuộc sống.
+        Ngoài việc học tập, mình dành thời gian cho nhiếp ảnh,
+        chạy bộ và cầu lông.
+        Website này là góc nhỏ để mình chia sẻ những điều mình yêu thích.
     </p>
 </section>
 
+<!-- SỞ THÍCH -->
 <section id="hobbies">
     <h2>Sở thích của mình</h2>
 
@@ -246,7 +311,10 @@ footer {
             <img src="images/nhiep-anh.jpg.jpeg" alt="Nhiếp ảnh">
             <div class="card-content">
                 <h3>📷 Nhiếp ảnh</h3>
-                <p>Lưu giữ những khoảnh khắc và kể chuyện qua từng khung hình.</p>
+                <p>
+                    Lưu giữ những khoảnh khắc đẹp
+                    và kể chuyện qua từng khung hình.
+                </p>
             </div>
         </div>
 
@@ -254,7 +322,10 @@ footer {
             <img src="images/chay-bo.jpg.jpeg" alt="Chạy bộ">
             <div class="card-content">
                 <h3>🏃 Chạy bộ</h3>
-                <p>Rèn luyện sức khỏe, thử thách bản thân và khám phá giới hạn.</p>
+                <p>
+                    Rèn luyện sức khỏe, thử thách bản thân
+                    và khám phá những cung đường mới.
+                </p>
             </div>
         </div>
 
@@ -262,15 +333,65 @@ footer {
             <img src="images/cau-long.jpg.jpeg" alt="Cầu lông">
             <div class="card-content">
                 <h3>🏸 Cầu lông</h3>
-                <p>Một môn thể thao giúp mình vận động và giải trí.</p>
+                <p>
+                    Vận động, giải trí và tận hưởng
+                    những giờ phút chơi thể thao.
+                </p>
             </div>
         </div>
 
     </div>
 </section>
 
+<!-- MÔN HỌC YÊU THÍCH -->
+<section id="subjects">
+    <h2>Môn học yêu thích</h2>
+
+    <p class="description">
+        Những môn học mình quan tâm và yêu thích
+        trong quá trình học tập.
+    </p>
+
+    <div class="cards">
+
+        <div class="subject-card">
+            <div class="icon">📐</div>
+            <h3>Toán học</h3>
+            <p>
+                Giúp phát triển tư duy logic,
+                khả năng phân tích và giải quyết vấn đề.
+            </p>
+        </div>
+
+        <div class="subject-card">
+            <div class="icon">⚡</div>
+            <h3>Vật lý</h3>
+            <p>
+                Giúp mình khám phá các quy luật tự nhiên
+                và hiểu hơn về thế giới xung quanh.
+            </p>
+        </div>
+
+        <div class="subject-card">
+            <div class="icon">🌍</div>
+            <h3>Tiếng Anh</h3>
+            <p>
+                Mở rộng kiến thức, giao tiếp
+                và khám phá thế giới.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- HÌNH ẢNH -->
 <section id="gallery">
     <h2>Góc hình ảnh</h2>
+
+    <p class="description">
+        Một vài hình ảnh ghi lại những sở thích
+        và hoạt động thường ngày của mình.
+    </p>
 
     <div class="gallery">
         <img src="images/nhiep-anh.jpg.jpeg" alt="Nhiếp ảnh">
@@ -279,10 +400,13 @@ footer {
     </div>
 </section>
 
+<!-- VIDEO -->
 <section id="video">
     <h2>Video của mình</h2>
+
     <p class="description">
-        Một chút hình ảnh và video ghi lại những khoảnh khắc đáng nhớ.
+        Những video và khoảnh khắc đáng nhớ
+        được mình lưu giữ.
     </p>
 
     <div class="video-box">
@@ -293,11 +417,13 @@ footer {
     </div>
 </section>
 
+<!-- CANON -->
 <section id="canon">
     <h2>Thương hiệu mình yêu thích</h2>
 
     <div class="canon-box">
         <h3>📷 Canon</h3>
+
         <p>
             Canon là thương hiệu máy ảnh và thiết bị hình ảnh
             mà mình yêu thích, gắn liền với niềm đam mê nhiếp ảnh.
@@ -315,6 +441,7 @@ footer {
 
 <footer>
     <p>© 2026 Bảo Minh. Website cá nhân.</p>
+    <p>Được thiết kế bởi Bảo Minh.</p>
 </footer>
 
 </body>
