@@ -4,10 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nguyễn Xuân Bảo Minh | Website cá nhân</title>
 
-<title>Nguyễn Xuân Bảo Minh | Portfolio</title>
-
-<meta name="description" content="Website cá nhân của Nguyễn Xuân Bảo Minh - Photography, Running and Badminton.">
+<meta name="description" content="Website cá nhân của Nguyễn Xuân Bảo Minh">
 
 <style>
 * {
@@ -53,7 +52,7 @@ header {
 
 nav {
     display: flex;
-    gap: 25px;
+    gap: 22px;
 }
 
 nav a {
@@ -75,13 +74,13 @@ nav a:hover {
 
 .hero .small {
     color: #e6a36c;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-size: 13px;
 }
 
 .hero h1 {
     font-size: clamp(42px, 9vw, 85px);
-    line-height: 1.12;
+    line-height: 1.2;
     margin: 25px 0;
 }
 
@@ -102,7 +101,6 @@ nav a:hover {
     color: #e6a36c;
     border-radius: 5px;
     width: fit-content;
-    transition: 0.3s;
 }
 
 .btn:hover {
@@ -254,16 +252,16 @@ footer {
     <div class="logo">MINH<span>.</span></div>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#hobbies">Sở thích</a>
+        <a href="#contact">Liên hệ</a>
     </nav>
 </header>
 
-<!-- HOME -->
+<!-- TRANG CHỦ -->
 <div class="hero" id="home">
-    <div class="small">WELCOME TO MY WORLD</div>
+    <div class="small">CHÀO MỪNG ĐẾN VỚI WEBSITE CỦA MÌNH</div>
 
     <h1>
         NGUYỄN XUÂN<br>
@@ -271,24 +269,24 @@ footer {
     </h1>
 
     <p>
-        Photography enthusiast. Sports lover.
-        Always exploring, creating and capturing
-        beautiful moments of life.
+        Yêu nhiếp ảnh, đam mê thể thao và thích
+        sáng tạo. Luôn khám phá những điều mới
+        và lưu giữ những khoảnh khắc đẹp trong cuộc sống.
     </p>
 
-    <a href="#about" class="btn">DISCOVER MORE ↗</a>
+    <a href="#about" class="btn">KHÁM PHÁ THÊM ↗</a>
 </div>
 
-<!-- ABOUT -->
+<!-- GIỚI THIỆU -->
 <section id="about">
-    <div class="section-label">01 / ABOUT ME</div>
-    <h2>Get to know me.</h2>
+    <div class="section-label">01 / GIỚI THIỆU</div>
+    <h2>Tìm hiểu về mình.</h2>
 
     <div class="about-content">
 
         <img
         src="images/nhiep-anh.jpg.jpeg"
-        alt="Bảo Minh với máy ảnh"
+        alt="Bảo Minh cùng máy ảnh"
         >
 
         <div class="about-text">
@@ -299,69 +297,60 @@ footer {
             <p>
                 Mình yêu thích nhiếp ảnh, thể thao
                 và sáng tạo nội dung. Với mình,
-                mỗi khoảnh khắc đều có một câu chuyện
+                mỗi khoảnh khắc đều mang một câu chuyện
                 riêng đáng để lưu giữ.
             </p>
 
             <p>
-                Website này là nơi mình chia sẻ
-                những sở thích, trải nghiệm và
-                hành trình khám phá bản thân.
+                Đây là không gian cá nhân, nơi mình
+                chia sẻ những sở thích, trải nghiệm
+                và hành trình khám phá bản thân.
             </p>
         </div>
 
     </div>
 </section>
 
-<!-- HOBBIES -->
+<!-- SỞ THÍCH -->
 <section class="hobbies" id="hobbies">
 
-    <div class="section-label">02 / MY INTERESTS</div>
-    <h2>Things I love.</h2>
+    <div class="section-label">02 / SỞ THÍCH</div>
+    <h2>Những điều mình yêu thích.</h2>
 
     <div class="grid">
 
         <div class="card">
-            <img
-            src="images/nhiep-anh.jpg.jpeg"
-            alt="Photography"
-            >
+            <img src="images/nhiep-anh.jpg.jpeg" alt="Nhiếp ảnh">
 
             <div class="card-content">
-                <h3>Photography</h3>
+                <h3>Nhiếp ảnh</h3>
                 <p>
-                    Capturing moments and telling
-                    stories through my camera.
+                    Lưu giữ những khoảnh khắc và kể
+                    những câu chuyện qua ống kính.
                 </p>
             </div>
         </div>
 
         <div class="card">
-            <img
-            src="images/chay-bo.jpg.jpeg"
-            alt="Running"
-            >
+            <img src="images/chay-bo.jpg.jpeg" alt="Chạy bộ">
 
             <div class="card-content">
-                <h3>Running</h3>
+                <h3>Chạy bộ</h3>
                 <p>
-                    Challenging myself and
-                    enjoying every journey.
+                    Thử thách bản thân, rèn luyện
+                    sức khỏe và tận hưởng mỗi hành trình.
                 </p>
             </div>
         </div>
 
         <div class="card">
-            <img
-            src="images/cau-long.jpg.jpeg"
-            alt="Badminton"
-            >
+            <img src="images/cau-long.jpg.jpeg" alt="Cầu lông">
 
             <div class="card-content">
-                <h3>Badminton</h3>
+                <h3>Cầu lông</h3>
                 <p>
-                    Staying active, improving
-                    and enjoying the game.
+                    Năng động, rèn luyện kỹ năng
+                    và tận hưởng niềm vui thể thao.
                 </p>
             </div>
         </div>
@@ -371,38 +360,36 @@ footer {
 
 <!-- VIDEO -->
 <section id="video">
-    <div class="section-label">03 / MY VIDEO</div>
-    <h2>My memories.</h2>
+    <div class="section-label">03 / VIDEO</div>
+    <h2>Những thước phim của mình.</h2>
 
     <div class="video-box">
         <video controls playsinline preload="metadata">
             <source src="video.mp4" type="video/mp4">
-            Your browser does not support video.
+            Trình duyệt không hỗ trợ phát video.
         </video>
     </div>
 </section>
 
-<!-- CONTACT -->
+<!-- LIÊN HỆ -->
 <section class="contact" id="contact">
 
-    <div class="section-label">04 / CONTACT</div>
+    <div class="section-label">04 / LIÊN HỆ</div>
 
-    <h2>Thanks for visiting.</h2>
+    <h2>Cảm ơn bạn đã ghé thăm!</h2>
 
     <p>
-        Thank you for taking the time
-        to explore my little world.
+        Cảm ơn bạn đã dành thời gian khám phá
+        không gian nhỏ của mình.
     </p>
 
-    <a href="#home" class="btn">BACK TO TOP ↑</a>
+    <a href="#home" class="btn">QUAY LẠI ĐẦU TRANG ↑</a>
 
 </section>
 
 <footer>
-    © 2026 NGUYEN XUAN BAO MINH.
-    ALL RIGHTS RESERVED.
+    © 2026 NGUYỄN XUÂN BẢO MINH. BẢN QUYỀN ĐƯỢC BẢO LƯU.
 </footer>
 
 </body>
 </html>
-
