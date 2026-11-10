@@ -1,1 +1,408 @@
 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nguyễn Xuân Bảo Minh | Portfolio</title>
+
+<meta name="description" content="Website cá nhân của Nguyễn Xuân Bảo Minh - Photography, Running and Badminton.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101114;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #292a30;
+    position: sticky;
+    top: 0;
+    background: rgba(16,17,20,0.95);
+    z-index: 10;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: #e6a36c;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #aaa;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #e6a36c;
+}
+
+.hero {
+    min-height: 85vh;
+    padding: 90px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .small {
+    color: #e6a36c;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 9vw, 85px);
+    line-height: 1.12;
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    color: #e6a36c;
+}
+
+.hero p {
+    color: #aaa;
+    max-width: 550px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    border: 1px solid #e6a36c;
+    color: #e6a36c;
+    border-radius: 5px;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e6a36c;
+    color: #101114;
+}
+
+section {
+    padding: 85px 10%;
+}
+
+.section-label {
+    color: #e6a36c;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 12px 0 30px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about-content img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-text p {
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.hobbies {
+    background: #17181d;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #202127;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.video-box {
+    background: #202127;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.contact {
+    background: #17181d;
+    text-align: center;
+}
+
+.contact p {
+    color: #aaa;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    color: #777;
+    border-top: 1px solid #292a30;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 70px 7%;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    h2 {
+        font-size: 29px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MINH<span>.</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <div class="small">WELCOME TO MY WORLD</div>
+
+    <h1>
+        NGUYỄN XUÂN<br>
+        <span>BẢO MINH.</span>
+    </h1>
+
+    <p>
+        Photography enthusiast. Sports lover.
+        Always exploring, creating and capturing
+        beautiful moments of life.
+    </p>
+
+    <a href="#about" class="btn">DISCOVER MORE ↗</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="section-label">01 / ABOUT ME</div>
+    <h2>Get to know me.</h2>
+
+    <div class="about-content">
+
+        <img
+        src="images/nhiep-anh.jpg.jpeg"
+        alt="Bảo Minh với máy ảnh"
+        >
+
+        <div class="about-text">
+            <p>
+                Xin chào! Mình là Nguyễn Xuân Bảo Minh.
+            </p>
+
+            <p>
+                Mình yêu thích nhiếp ảnh, thể thao
+                và sáng tạo nội dung. Với mình,
+                mỗi khoảnh khắc đều có một câu chuyện
+                riêng đáng để lưu giữ.
+            </p>
+
+            <p>
+                Website này là nơi mình chia sẻ
+                những sở thích, trải nghiệm và
+                hành trình khám phá bản thân.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- HOBBIES -->
+<section class="hobbies" id="hobbies">
+
+    <div class="section-label">02 / MY INTERESTS</div>
+    <h2>Things I love.</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img
+            src="images/nhiep-anh.jpg.jpeg"
+            alt="Photography"
+            >
+
+            <div class="card-content">
+                <h3>Photography</h3>
+                <p>
+                    Capturing moments and telling
+                    stories through my camera.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img
+            src="images/chay-bo.jpg.jpeg"
+            alt="Running"
+            >
+
+            <div class="card-content">
+                <h3>Running</h3>
+                <p>
+                    Challenging myself and
+                    enjoying every journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img
+            src="images/cau-long.jpg.jpeg"
+            alt="Badminton"
+            >
+
+            <div class="card-content">
+                <h3>Badminton</h3>
+                <p>
+                    Staying active, improving
+                    and enjoying the game.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+    <div class="section-label">03 / MY VIDEO</div>
+    <h2>My memories.</h2>
+
+    <div class="video-box">
+        <video controls playsinline preload="metadata">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div class="section-label">04 / CONTACT</div>
+
+    <h2>Thanks for visiting.</h2>
+
+    <p>
+        Thank you for taking the time
+        to explore my little world.
+    </p>
+
+    <a href="#home" class="btn">BACK TO TOP ↑</a>
+
+</section>
+
+<footer>
+    © 2026 NGUYEN XUAN BAO MINH.
+    ALL RIGHTS RESERVED.
+</footer>
+
+</body>
+</html>
+
